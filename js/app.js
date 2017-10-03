@@ -15,11 +15,8 @@ for(var i = 0; i<items.length; i++){
 	headerOne.innerHTML = items[i].product;
 	divElem.appendChild(headerOne);
 
-	var divElem = document.createElement("div");
-	divElem.className = "container";
-	document.body.appendChild(divElem);
-	
 	var headerTwo = document.createElement("h2");
-	headerTwo.classname = "itemDescription";
+	headerTwo.className = "itemDescription";
 	headerTwo.innerHTML = items[i].description;
+	divElem.appendChild(headerTwo);
 }
